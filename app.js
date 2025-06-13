@@ -104,7 +104,29 @@ app.post("/ranking/add",async (req, res)=>{
     }
 
 });
+
+app.get("/", (req, res) => {
+    res.send(`
+        <html>
+        <head>
+            <title>Ranking Microservice</title>
+            <style>
+                body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+                h1 { color: #007bff; }
+            </style>
+        </head>
+        <body>
+            <h1>Welcome to the Ranking Microservice 🚀</h1>
+            <p>Use the API endpoints to retrieve ranking data.</p>
+            <p>Try: <code>/ranking/player/:id_player</code> or <code>/ranking/top/:size</code></p>
+        </body>
+        </html>
+    `);
+});
+
 module.exports = app;
+
+
 //app.listen(port, () =>{
 //    console.log(`Server is running on http://localhost:${port}`);
 //});
