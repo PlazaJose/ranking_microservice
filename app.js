@@ -104,7 +104,7 @@ app.post("/ranking/add",async (req, res)=>{
     }
 
 });
-
-app.listen(port, () =>{
-    console.log(`Server is running on http://localhost:${port}`);
-});
+module.exports = app;
+//app.listen(port, () =>{
+//    console.log(`Server is running on http://localhost:${port}`);
+//});
