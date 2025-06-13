@@ -19,16 +19,15 @@ const azure_db = {
   //ssl: {ca: fs.readFileSync("DigiCertGlobalRootCA.crt.pem")}
 }
 
-const azure_db2 = {
-  host: 'bmbr-server.mysql.database.azure.com',
+const clever_cloud = {
+  host: 'bcmnjyskkyjothonjycj-mysql.services.clever-cloud.com',
   port: 3306,
-  user: 'atbvbruvth',
-  password: 'bMp4brZzAXDJrBx',
-  database: 'buscaminasbr_pruebas', 
-  ssl:true
+  user: 'ue40cj8vrpcwdsuo',//atbvbruvth
+  password: '7PFH1wD0ppfFtTJd4Ka9',//Fj7BCi2u$CcTRRAx
+  database: 'bcmnjyskkyjothonjycj',
 }
 // Set up the connection to the database
-const connection = mysql.createConnection(local_db);
+const connection = mysql.createConnection(clever_cloud);
 
 connection.connect((err) => {
   if (err) {
