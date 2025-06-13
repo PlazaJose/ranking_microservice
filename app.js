@@ -124,9 +124,9 @@ app.get("/", (req, res) => {
     `);
 });
 
-module.exports = app;
+//module.exports = app;
 
 
-//app.listen(port, () =>{
-//    console.log(`Server is running on http://localhost:${port}`);
-//});
+app.listen(port, () =>{
+    console.log(`Server is running on http://localhost:${port}`);
+});
